@@ -235,7 +235,7 @@ From-Zero-to-Pixel/
 │   ├── ACCESSIBILITY.md
 │   └── POSTMORTEM.md
 │
-└── project/
+└── GMTK JAM/
     └── Arquivos do jogo
 ```
 
