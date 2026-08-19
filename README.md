@@ -6,7 +6,7 @@ O projeto foi desenvolvido de forma solo, abrangendo **programação, game desig
 
 > Este repositório também funciona como um exercício de Game Design: após concluir a disciplina de Conceitos Básicos do Game Design, da Residência de Games da IFPB, estou revisitando o projeto para reconstruir e documentar seu GDD a partir dos conceitos estudados.
 
----
+
 
 ## 🕹️ Sobre o jogo
 
@@ -18,7 +18,7 @@ A principal mecânica do jogo é um puzzle baseado em **pintura de pixels e cont
 
 A mecânica foi pensada para criar uma sensação de **urgência**, enquanto a narrativa estabelece o contexto para o desafio.
 
----
+ 
 
 ## 🎮 Conceito de Gameplay
 
@@ -51,7 +51,7 @@ Resolver o puzzle
 Avançar na narrativa
 ```
 
----
+ 
 
 ## 🎨 Direção de Arte
 
@@ -63,7 +63,7 @@ Além dos personagens, foram produzidas animações e cenários próprios para o
 
 Durante a Game Jam, parte significativa do tempo de desenvolvimento foi dedicada à produção e ao polimento da arte e das animações.
 
----
+ 
 
 ## 🎵 Música e Atmosfera
 
@@ -71,7 +71,7 @@ A trilha sonora foi composta especificamente para o projeto, utilizando uma est�
 
 A música foi utilizada para reforçar a atmosfera de suspense, especialmente durante a aparição da entidade e a transição para o desafio do puzzle.
 
----
+ 
 
 ## 🧩 Design do Puzzle
 
@@ -92,7 +92,7 @@ O desenvolvimento aconteceu em apenas quatro dias e exigiu decisões constantes 
 
 O objetivo principal passou a ser entregar uma experiência funcional dentro do prazo, priorizando a integração entre **narrativa, arte, animação, música e a mecânica principal**.
 
----
+ 
 
 ## ⏱️ Desenvolvimento em 4 dias
 
@@ -118,7 +118,7 @@ Isso inclui principalmente a expansão do puzzle e sua progressão de dificuldad
 
 Em vez de considerar essas limitações apenas como problemas do projeto, elas fazem parte da análise de **gestão de escopo** realizada neste GDD.
 
----
+ 
 ## ⚙️ Modificações
 A gameplay do jogo sofreu grandes alterações, principalmente ao final do prazo. Originalmente:
 
@@ -143,7 +143,7 @@ Ao fazer os primeiros testes da interface com a arte de 16x16 , observou-se como
 
 A narrativa e o roteiro foi alterado para manter o sentido da história.
 
----
+ 
 
 ## 🔎 Pós-mortem
 
@@ -161,7 +161,7 @@ Isso permitiria testar:
 * Se a dificuldade aumenta de maneira satisfatória;
 * Se a interação é confortável.
 
----
+ 
 
 ## 📚 GDD
 
@@ -183,7 +183,7 @@ Decisões tomadas durante o desenvolvimento para adaptar o projeto ao prazo de q
 
 📑 **[Abrir GDD](docs/GDD.md)**
 
----
+ 
 
 ## ♿ Acessibilidade
 
@@ -195,7 +195,7 @@ A acessibilidade também é considerada como uma oportunidade de melhoria para v
 
 📑 **[Abrir documentação de acessibilidade](docs/ACCESSIBILITY.md)**
 
----
+ 
 
 ## 🛠️ Tecnologias
 
@@ -205,7 +205,7 @@ A acessibilidade também é considerada como uma oportunidade de melhoria para v
 * **Animação:** Frame-by-frame
 * **Áudio:** Música original em estilo 8-bit
 
----
+ 
 
 ## 👤 Desenvolvimento
 
@@ -221,7 +221,7 @@ Projeto desenvolvido individualmente durante a **GMTK Game Jam 2026** de 4 dias,
 * Composição musical
 * Roteiro
 
----
+ 
 
 ## 📂 Estrutura da documentação
 
@@ -239,7 +239,7 @@ From-Zero-to-Pixel/
     └── Arquivos do jogo
 ```
 
----
+ 
 
 ## 🚧 Estado do projeto
 
@@ -249,7 +249,7 @@ Esta versão corresponde ao escopo desenvolvido durante a Game Jam.
 
 O projeto pode ser revisitado futuramente para experimentar novas mecânicas, melhorar o balanceamento do puzzle e expandir sua narrativa.
 
----
+ 
 
 ## 📖 Sobre este repositório
 
