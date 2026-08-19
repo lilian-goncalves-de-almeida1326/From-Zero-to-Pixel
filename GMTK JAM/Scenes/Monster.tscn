@@ -1,0 +1,36 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://SRC/monster/talk/1534 Sem Título2_20260725212530.png" type="Texture" id=1]
+[ext_resource path="res://SRC/monster/talk/1534 Sem Título2_20260726034518.png" type="Texture" id=2]
+[ext_resource path="res://SRC/monster/talk/1534 Sem Título2_20260725212522.png" type="Texture" id=3]
+[ext_resource path="res://SRC/monster/idle/1534 Sem Título2_20260725214442.png" type="Texture" id=4]
+[ext_resource path="res://SRC/monster/idle/1534 Sem Título2_20260725214439.png" type="Texture" id=5]
+[ext_resource path="res://SRC/monster/idle/1534 Sem Título2_20260725214431.png" type="Texture" id=6]
+[ext_resource path="res://SRC/monster/idle/1534 Sem Título2_20260725214436.png" type="Texture" id=7]
+[ext_resource path="res://SRC/monster/idle/1534 Sem Título2_20260725212651.png" type="Texture" id=8]
+[ext_resource path="res://SRC/monster/idle/1534 Sem Título2_20260725214434.png" type="Texture" id=9]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "Talk",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 5 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Monster" type="Node2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Idle"
+playing = true

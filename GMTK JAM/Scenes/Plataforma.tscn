@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Parede.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/ShadowMemory.tscn" type="PackedScene" id=4]
+[ext_resource path="res://SRC/Background/BackgroundTK.png" type="Texture" id=5]
+
+[node name="Plataforma" type="Node2D"]
+
+[node name="BackgroundTk" type="Sprite" parent="."]
+position = Vector2( 62, 36 )
+scale = Vector2( 8, 8 )
+texture = ExtResource( 5 )
+
+[node name="Parede" parent="." instance=ExtResource( 3 )]
+position = Vector2( -289, 191 )
+
+[node name="Parede2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 574, 191 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 14, 164 )
+
+[node name="ShadowMemory" parent="." instance=ExtResource( 4 )]
+position = Vector2( 362, 124 )
+newLevel = "res://Scenes/CasualGame.tscn"
+
+[node name="ShadowMemory2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 738, 29 )
+newLevel = "res://Scenes/CasualGame.tscn"
+
+[node name="ShadowMemory3" parent="." instance=ExtResource( 4 )]
+position = Vector2( -536, 143 )
+newLevel = "res://Scenes/CasualGame.tscn"

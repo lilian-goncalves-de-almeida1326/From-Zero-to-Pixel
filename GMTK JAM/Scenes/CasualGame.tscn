@@ -1,0 +1,630 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scripts/CasualGame.gd" type="Script" id=1]
+[ext_resource path="res://SRC/Fonts/Jatoba_fonte-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://SRC/puzzles/1530 Sem Título.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 48
+outline_size = 4
+outline_color = Color( 0.0470588, 0.0470588, 0.0470588, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 60
+outline_size = 5
+outline_color = Color( 0.0470588, 0.0470588, 0.0470588, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 28
+outline_size = 2
+outline_color = Color( 0.0470588, 0.0470588, 0.0470588, 1 )
+font_data = ExtResource( 2 )
+
+[node name="CasualGame" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = -79.0
+margin_top = -65.0
+margin_right = 1070.0
+margin_bottom = 628.0
+
+[node name="PanelNumber" type="Panel" parent="."]
+margin_left = 455.0
+margin_top = 15.0
+margin_right = 521.0
+margin_bottom = 75.0
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="TimerScreen" type="Label" parent="."]
+margin_left = 420.0
+margin_top = 24.0
+margin_right = 673.0
+margin_bottom = 94.0
+custom_fonts/font = SubResource( 1 )
+text = ":00"
+align = 1
+
+[node name="TimerScreen2" type="Label" parent="."]
+margin_left = 362.0
+margin_top = 19.0
+margin_right = 615.0
+margin_bottom = 89.0
+custom_fonts/font = SubResource( 3 )
+text = "04"
+align = 1
+
+[node name="paineis" type="Node2D" parent="."]
+
+[node name="Panel" type="Panel" parent="paineis"]
+margin_left = 379.0
+margin_top = 68.0
+margin_right = 439.0
+margin_bottom = 128.0
+
+[node name="Label" type="Label" parent="paineis/Panel"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Panel2" type="Panel" parent="paineis"]
+margin_left = 319.0
+margin_top = 129.0
+margin_right = 379.0
+margin_bottom = 189.0
+
+[node name="Label" type="Label" parent="paineis/Panel2"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Panel3" type="Panel" parent="paineis"]
+margin_left = 439.0
+margin_top = 128.0
+margin_right = 499.0
+margin_bottom = 188.0
+
+[node name="Label" type="Label" parent="paineis/Panel3"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Panel4" type="Panel" parent="paineis"]
+margin_left = 499.0
+margin_top = 188.0
+margin_right = 559.0
+margin_bottom = 248.0
+
+[node name="Label" type="Label" parent="paineis/Panel4"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Panel5" type="Panel" parent="paineis"]
+margin_left = 559.0
+margin_top = 128.0
+margin_right = 619.0
+margin_bottom = 188.0
+
+[node name="Label" type="Label" parent="paineis/Panel5"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Panel6" type="Panel" parent="paineis"]
+margin_left = 679.0
+margin_top = 128.0
+margin_right = 739.0
+margin_bottom = 188.0
+
+[node name="Label" type="Label" parent="paineis/Panel6"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Panel7" type="Panel" parent="paineis"]
+margin_left = 621.0
+margin_top = 68.0
+margin_right = 681.0
+margin_bottom = 128.0
+
+[node name="Label" type="Label" parent="paineis/Panel7"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Panel8" type="Panel" parent="paineis"]
+margin_left = 679.0
+margin_top = 188.0
+margin_right = 739.0
+margin_bottom = 248.0
+
+[node name="Label" type="Label" parent="paineis/Panel8"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Panel9" type="Panel" parent="paineis"]
+margin_left = 319.0
+margin_top = 189.0
+margin_right = 379.0
+margin_bottom = 249.0
+
+[node name="Label" type="Label" parent="paineis/Panel9"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Panel10" type="Panel" parent="paineis"]
+margin_left = 679.0
+margin_top = 247.0
+margin_right = 739.0
+margin_bottom = 307.0
+
+[node name="Label" type="Label" parent="paineis/Panel10"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Panel11" type="Panel" parent="paineis"]
+margin_left = 319.0
+margin_top = 248.0
+margin_right = 379.0
+margin_bottom = 308.0
+
+[node name="Label" type="Label" parent="paineis/Panel11"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Panel12" type="Panel" parent="paineis"]
+margin_left = 379.0
+margin_top = 307.0
+margin_right = 439.0
+margin_bottom = 367.0
+
+[node name="Label" type="Label" parent="paineis/Panel12"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Panel13" type="Panel" parent="paineis"]
+margin_left = 440.0
+margin_top = 368.0
+margin_right = 500.0
+margin_bottom = 428.0
+
+[node name="Label" type="Label" parent="paineis/Panel13"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Panel14" type="Panel" parent="paineis"]
+margin_left = 499.0
+margin_top = 428.0
+margin_right = 559.0
+margin_bottom = 488.0
+
+[node name="Label" type="Label" parent="paineis/Panel14"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Panel15" type="Panel" parent="paineis"]
+margin_left = 559.0
+margin_top = 368.0
+margin_right = 619.0
+margin_bottom = 428.0
+
+[node name="Label" type="Label" parent="paineis/Panel15"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Panel16" type="Panel" parent="paineis"]
+margin_left = 619.0
+margin_top = 307.0
+margin_right = 679.0
+margin_bottom = 367.0
+
+[node name="Label" type="Label" parent="paineis/Panel16"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Panel17" type="Panel" parent="paineis"]
+margin_left = 379.0
+margin_top = 128.0
+margin_right = 439.0
+margin_bottom = 188.0
+
+[node name="Label" type="Label" parent="paineis/Panel17"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "1"
+align = 1
+valign = 1
+
+[node name="Panel18" type="Panel" parent="paineis"]
+margin_left = 619.0
+margin_top = 128.0
+margin_right = 679.0
+margin_bottom = 188.0
+
+[node name="Label" type="Label" parent="paineis/Panel18"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "1"
+align = 1
+valign = 1
+
+[node name="Panel19" type="Panel" parent="paineis"]
+margin_left = 439.0
+margin_top = 188.0
+margin_right = 499.0
+margin_bottom = 248.0
+
+[node name="Label" type="Label" parent="paineis/Panel19"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "3"
+align = 1
+valign = 1
+
+[node name="Panel20" type="Panel" parent="paineis"]
+margin_left = 559.0
+margin_top = 188.0
+margin_right = 619.0
+margin_bottom = 248.0
+
+[node name="Label" type="Label" parent="paineis/Panel20"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "1"
+align = 1
+valign = 1
+
+[node name="Panel21" type="Panel" parent="paineis"]
+margin_left = 379.0
+margin_top = 188.0
+margin_right = 439.0
+margin_bottom = 248.0
+
+[node name="Label" type="Label" parent="paineis/Panel21"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "1"
+align = 1
+valign = 1
+
+[node name="Panel22" type="Panel" parent="paineis"]
+margin_left = 619.0
+margin_top = 188.0
+margin_right = 679.0
+margin_bottom = 248.0
+
+[node name="Label" type="Label" parent="paineis/Panel22"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "2"
+align = 1
+valign = 1
+
+[node name="Panel23" type="Panel" parent="paineis"]
+margin_left = 439.0
+margin_top = 248.0
+margin_right = 499.0
+margin_bottom = 308.0
+
+[node name="Label" type="Label" parent="paineis/Panel23"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "1"
+align = 1
+valign = 1
+
+[node name="Panel24" type="Panel" parent="paineis"]
+margin_left = 559.0
+margin_top = 248.0
+margin_right = 619.0
+margin_bottom = 308.0
+
+[node name="Label" type="Label" parent="paineis/Panel24"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "1"
+align = 1
+valign = 1
+
+[node name="Panel25" type="Panel" parent="paineis"]
+margin_left = 379.0
+margin_top = 248.0
+margin_right = 439.0
+margin_bottom = 308.0
+
+[node name="Label" type="Label" parent="paineis/Panel25"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "3"
+align = 1
+valign = 1
+
+[node name="Panel26" type="Panel" parent="paineis"]
+margin_left = 619.0
+margin_top = 248.0
+margin_right = 679.0
+margin_bottom = 308.0
+
+[node name="Label" type="Label" parent="paineis/Panel26"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "2"
+align = 1
+valign = 1
+
+[node name="Panel27" type="Panel" parent="paineis"]
+margin_left = 499.0
+margin_top = 248.0
+margin_right = 559.0
+margin_bottom = 308.0
+
+[node name="Label" type="Label" parent="paineis/Panel27"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "1"
+align = 1
+valign = 1
+
+[node name="Panel28" type="Panel" parent="paineis"]
+margin_left = 499.0
+margin_top = 308.0
+margin_right = 559.0
+margin_bottom = 368.0
+
+[node name="Label" type="Label" parent="paineis/Panel28"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "1"
+align = 1
+valign = 1
+
+[node name="Panel29" type="Panel" parent="paineis"]
+margin_left = 499.0
+margin_top = 368.0
+margin_right = 559.0
+margin_bottom = 428.0
+
+[node name="Label" type="Label" parent="paineis/Panel29"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "2"
+align = 1
+valign = 1
+
+[node name="Panel30" type="Panel" parent="paineis"]
+margin_left = 439.0
+margin_top = 308.0
+margin_right = 499.0
+margin_bottom = 368.0
+
+[node name="Label" type="Label" parent="paineis/Panel30"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "1"
+align = 1
+valign = 1
+
+[node name="Panel31" type="Panel" parent="paineis"]
+margin_left = 559.0
+margin_top = 308.0
+margin_right = 619.0
+margin_bottom = 368.0
+
+[node name="Label" type="Label" parent="paineis/Panel31"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -12.5
+margin_bottom = 12.5
+custom_fonts/font = SubResource( 2 )
+text = "2"
+align = 1
+valign = 1
+
+[node name="1530SemTítulo" type="Sprite" parent="."]
+visible = false
+position = Vector2( 529, 278 )
+scale = Vector2( 60, 60 )
+texture = ExtResource( 3 )
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="gui_input" from="paineis/Panel" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel2" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel3" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel4" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel5" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel6" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel7" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel8" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel9" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel10" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel11" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel12" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel13" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel14" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel15" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel16" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel17" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel18" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel19" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel20" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel21" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel22" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel23" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel24" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel25" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel26" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel27" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel28" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel29" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel30" to="." method="_on_Panel_gui_input"]
+[connection signal="gui_input" from="paineis/Panel31" to="." method="_on_Panel_gui_input"]

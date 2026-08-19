@@ -1,0 +1,33 @@
+extends Node2D
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = "text"
+
+export var newLevel: String
+var bodyEntered = false
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	if Input.is_key_pressed(KEY_E) and bodyEntered:
+		get_tree().change_scene(newLevel)
+
+	pass
+
+
+func _on_Area2D_body_entered(body):
+	$Label.visible = true
+	bodyEntered = true
+	pass # Replace with function body.
+
+
+func _on_Area2D_body_exited(body):
+	$Label.visible = false
+	bodyEntered = false
+	pass # Replace with function body.

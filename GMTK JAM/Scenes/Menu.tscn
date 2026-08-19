@@ -1,0 +1,150 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=1]
+[ext_resource path="res://SRC/Fonts/Jatoba_fonte-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://SRC/Fonts/ComicHelvetic_Medium.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://Scenes/ShadowMemory.tscn" type="PackedScene" id=4]
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.0470588, 0.0470588, 0.0470588, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.475586, 0.0868502, 0.121016, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="Theme" id=9]
+Panel/styles/panel = SubResource( 8 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 80
+outline_size = 1
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.475586, 0.0868502, 0.121016, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0.0470588, 0.0470588, 0.0470588, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.475586, 0.0868502, 0.121016, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="Theme" id=13]
+Button/styles/hover = SubResource( 11 )
+Button/styles/normal = SubResource( 12 )
+Button/styles/pressed = SubResource( 15 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 28
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=16]
+size = 32
+font_data = ExtResource( 3 )
+
+[node name="Menu" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 1024.0
+margin_bottom = 576.0
+rect_pivot_offset = Vector2( 576, -112 )
+theme = SubResource( 9 )
+
+[node name="Label" type="Label" parent="."]
+margin_top = 16.0
+margin_right = 1024.0
+margin_bottom = 94.0
+custom_fonts/font = SubResource( 10 )
+text = "Menu"
+align = 1
+
+[node name="BtnEN" type="Button" parent="."]
+margin_left = 200.0
+margin_top = 162.0
+margin_right = 392.0
+margin_bottom = 216.0
+theme = SubResource( 13 )
+custom_colors/font_color_hover = Color( 0.475586, 0.0868502, 0.121016, 1 )
+custom_colors/font_color_pressed = Color( 0.475586, 0.0868502, 0.121016, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "English"
+
+[node name="BtnPTBR" type="Button" parent="."]
+margin_left = 632.0
+margin_top = 162.0
+margin_right = 824.0
+margin_bottom = 216.0
+theme = SubResource( 13 )
+custom_colors/font_color_hover = Color( 0.475586, 0.0868502, 0.121016, 1 )
+custom_colors/font_color_pressed = Color( 0.475586, 0.0868502, 0.121016, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "Português"
+
+[node name="BtnES" type="Button" parent="."]
+margin_left = 416.0
+margin_top = 162.0
+margin_right = 608.0
+margin_bottom = 216.0
+theme = SubResource( 13 )
+custom_colors/font_color_hover = Color( 0.475586, 0.0868502, 0.121016, 1 )
+custom_colors/font_color_pressed = Color( 0.475586, 0.0868502, 0.121016, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "Español"
+
+[node name="Label2" type="Label" parent="."]
+margin_top = 111.0
+margin_right = 1024.0
+margin_bottom = 160.0
+custom_fonts/font = SubResource( 16 )
+text = "Menu"
+align = 1
+
+[node name="BtnStart" type="Button" parent="."]
+margin_left = 256.0
+margin_top = 448.0
+margin_right = 768.0
+margin_bottom = 512.0
+theme = SubResource( 13 )
+custom_colors/font_color_hover = Color( 0.475586, 0.0868502, 0.121016, 1 )
+custom_colors/font_color_pressed = Color( 0.475586, 0.0868502, 0.121016, 1 )
+custom_fonts/font = SubResource( 14 )
+text = "Start the Game"
+
+[node name="ShadowMemory" parent="." instance=ExtResource( 4 )]
+position = Vector2( 128, 312 )
+
+[node name="ShadowMemory2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 640, 72 )
+scale = Vector2( 0.7, 0.7 )
+
+[node name="ShadowMemory3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 896, 480 )
+scale = Vector2( 1.5, 1.5 )
+
+[connection signal="pressed" from="BtnEN" to="." method="_on_BtnEN_pressed"]
+[connection signal="pressed" from="BtnPTBR" to="." method="_on_BtnPTBR_pressed"]
+[connection signal="pressed" from="BtnES" to="." method="_on_BtnES_pressed"]
+[connection signal="pressed" from="BtnStart" to="." method="_on_BtnStart_pressed"]

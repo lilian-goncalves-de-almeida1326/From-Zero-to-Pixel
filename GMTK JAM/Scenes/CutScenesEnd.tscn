@@ -1,0 +1,114 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Scripts/CutScenesEnd.gd" type="Script" id=1]
+[ext_resource path="res://SRC/Background/1533 Sem Título_20260726033734.png" type="Texture" id=2]
+[ext_resource path="res://SRC/Fonts/ComicHelvetic_Medium.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://SRC/Fonts/Jatoba_fonte-Regular.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.0470588, 0.0470588, 0.0470588, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.475586, 0.0868502, 0.121016, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="Theme" id=9]
+Panel/styles/panel = SubResource( 14 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.475586, 0.0868502, 0.121016, 1 )
+corner_radius_top_right = 25
+
+[sub_resource type="Theme" id=11]
+Panel/styles/panel = SubResource( 10 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 60
+outline_size = 1
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 1, 1, 1, 1 )
+corner_radius_top_right = 25
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.475586, 0.0868502, 0.121016, 1 )
+corner_radius_top_right = 25
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.475586, 0.0868502, 0.121016, 1 )
+draw_center = false
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.475586, 0.0868502, 0.121016, 1 )
+corner_radius_top_right = 25
+
+[sub_resource type="Theme" id=6]
+Button/styles/hover = SubResource( 7 )
+Button/styles/normal = SubResource( 4 )
+Button/styles/pressed = SubResource( 5 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 28
+font_data = ExtResource( 3 )
+
+[node name="CutScenes" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="1533SemTítulo20260726033734" type="Sprite" parent="."]
+position = Vector2( 505, 288 )
+scale = Vector2( 8, 8 )
+texture = ExtResource( 2 )
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 32.0
+margin_top = 400.0
+margin_right = 987.0
+margin_bottom = 558.0
+theme = SubResource( 9 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+margin_left = 24.0
+margin_top = 16.0
+margin_right = 936.0
+margin_bottom = 88.0
+custom_fonts/normal_font = SubResource( 2 )
+text = "Tô tão bêbado que nem lembro direito meu nome..."
+
+[node name="Panel2" type="Panel" parent="."]
+margin_left = 32.0
+margin_top = 336.0
+margin_right = 368.0
+margin_bottom = 391.0
+theme = SubResource( 11 )
+
+[node name="Label" type="Label" parent="Panel2"]
+margin_left = 16.0
+margin_right = 336.0
+margin_bottom = 56.0
+custom_fonts/font = SubResource( 3 )
+text = "Samuel"
+
+[node name="BtnNextText" type="Button" parent="."]
+margin_left = 792.0
+margin_top = 496.0
+margin_right = 959.0
+margin_bottom = 540.0
+theme = SubResource( 6 )
+custom_colors/font_color_hover = Color( 0.475586, 0.0868502, 0.121016, 1 )
+custom_colors/font_color_pressed = Color( 0.475586, 0.0868502, 0.121016, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "next"
+
+[connection signal="pressed" from="BtnNextText" to="." method="_on_BtnNextText_pressed"]
