@@ -251,7 +251,7 @@ O projeto pode ser revisitado futuramente para experimentar novas mecânicas, me
 
  
 
-## 📖 Sobre este repositório
+## 📖 Sobre este Repositório
 
 Este projeto não é apenas um registro da Game Jam.
 
